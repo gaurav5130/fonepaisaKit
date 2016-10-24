@@ -1,6 +1,6 @@
-# Fonepaisa-Integration-Kit-ROR
+# Fonepaisa-Kit-ROR
 
-FonePaisa-Integration-Kit-ROR is used in most modern Ruby applications which deal with payments and transactions. It was developed for usage in Ruby on Rails web applications with help of fonepaisaPG gem.
+FonePaisa-Kit-ROR is used in most modern Ruby applications which deal with payments and transactions. It was developed for usage in Ruby on Rails web applications with help of fonepaisaPG gem.
 
 
 # Setup
@@ -43,15 +43,15 @@ FonePaisa-Integration-Kit-ROR is used in most modern Ruby applications which dea
 
 
   - Add fonepaisaPG gem in your gemfile.
-  
+
   ![Alt text](/images/gem.png?raw=true "Gem")
 
 
 
 * Start Transacting
 
-  bundle
-  rails s
+  - bundle
+  - rails s
 
 
 
