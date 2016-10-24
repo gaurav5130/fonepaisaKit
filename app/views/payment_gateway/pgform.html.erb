@@ -1,4 +1,4 @@
-<%= form_tag ('https://test.fonepaisa.com/pg/pay') do %>
+<%= form_tag (@form_submit) do %>
 	<%= hidden_field_tag :msg_name, @msg_name  %>
 	<%= hidden_field_tag :id, @id  %>
 	<%= hidden_field_tag :merchant_id, @merchant_id  %>

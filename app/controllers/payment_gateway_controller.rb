@@ -3,6 +3,11 @@ class PaymentGatewayController < ApplicationController
 	FonepaisaPrivKey = File.read(File.expand_path('..',__FILE__) + '/../assets/fonepaisaCredentials/priv.pem')
 	FonepaisaPubKey = File.read(File.expand_path('..',__FILE__) + '/../assets/fonepaisaCredentials/public.pub')
 	def pgform
+		if Rails.env.test? || Rails.env.development?
+			@form_submit = 'https://test.fonepaisa.com/pg/pay'
+		elsif Rails.env.production?
+			@form_submit = 'https://secure.fonepaisa.com/pg/pay'
+		end
 		@msg_name = 'request_payment'
 		@id = "FPTEST"         
 		@merchant_id = "FPTEST"

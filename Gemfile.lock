@@ -1,5 +1,6 @@
-PATH
-  remote: ../fonepaisaPG
+GIT
+  remote: https://github.com/gaurav5130/fonepaisaPG
+  revision: 839c77f5082d105ca91aefec4306984a45c72b16
   specs:
     fonepaisaPG (0.1.0)
 
