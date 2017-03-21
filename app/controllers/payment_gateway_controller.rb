@@ -7,6 +7,8 @@ class PaymentGatewayController < ApplicationController
 			@form_submit = 'https://test.fonepaisa.com/pg/pay'
 		elsif Rails.env.production?
 			@form_submit = 'https://secure.fonepaisa.com/pg/pay'
+		else
+			@form_submit = 'https://test.fonepaisa.com/pg/pay'
 		end
 		@msg_name = 'request_payment'
 		@id = "FPTEST"         
